@@ -86,6 +86,9 @@ app.get("/register",function(req,res){
   res.render("register.ejs")
 })
 
+app.get("/login",function(req,res){
+  res.render("login.ejs")
+})
 app.get("/home",function(req,res){
   res.render("home.ejs")
 })
@@ -106,6 +109,22 @@ app.get("/home",function(req,res){
     })
 });
 
+app.post("/login",function(req,res){
+  const user = new userdb({
+    username:req.body.username,
+    password:req.body.password
+  });
+  req.login(user,function(err){
+    if(err){
+      console.log(err);
+      res.redirect("/login");
+    }else{
+      userdb.authenticate("local")(req,res,function(){
+        res.redirect("/home")
+      });
+    }
+  });
+});
 app.listen(3000,function(err){
   if(err){
     console.log(err);
