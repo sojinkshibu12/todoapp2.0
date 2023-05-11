@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+.headbar{
+	display: flex;
+
+	width: 100%;
+	height: 100px;
+	background-color: #8294C4;
+	justify-content: space-between;
+
+}
+.headdiv1{
+	
+	display: inline-block;
+	padding: 30px;
+	margin-left: 50px;
+
+}
+ul{
+	margin-top: 30px;
+	display: flex;
+	flex-direction: row;
+
+	list-style-type: none;
+
+}
+li{
+	margin-right: 100px;
+
+	color: black;
+
+}
+a{
+	text-decoration: none;
+	font-size: 20px;
+	color: black;
+	transition: 0.2s;
+}
+a:hover{
+	text-decoration: none;
+	color: black;
+	opacity: 0.3;
+}
+
+h1{
+    color: black;
+}
+
+.maindiv-first{
+
+    margin-top: 300px;
+    display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.welcome-first{
+	margin-bottom: 100px;
+}
+.childdiv1-first{
+	width: 30%;
+	display: flex;
+    justify-content: center;
+	gap: 20px;
+}
+.btn-lg{
+	width: 120px;
+	height: 50px;
+	border: none;
+	cursor: pointer;
+	background-color: #ACB1D6;
+	border-radius: 10px;
+	font-size: 25px;
+	font-family: 'Roboto', sans-serif;
+	transition: 0.3s ;
+	text-decoration: none;
+	color: black;
+	text-align: center;
+}
+.btn-lg:hover{
+	text-decoration: none;
+	color: black;
+	opacity: 0.5;
+}
+
+
+/* ####################################### */
+
+.regcard{
+	width: 35%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 10%;
+	padding: 20px;
+	
+}
+.regbox{
+	padding: 20px;
+	/* border: 2px solid; */
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+.or{
+	margin-top: 30px;
+	text-align: center;
+	color: #DBDFEA;
+}
+.gbox{
+	width: 20%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 20px;
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+	transition: 0.2s;
+}
+.gbox:hover{
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
